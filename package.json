@@ -1,0 +1,22 @@
+{
+  "name": "inbox-agent",
+  "private": true,
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "test:watch": "pnpm --filter @inbox/web test:watch",
+    "test:integration": "pnpm --filter @inbox/web test:integration",
+    "verify": "pnpm lint && pnpm typecheck && pnpm test && pnpm build",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,css}\" --ignore-path .gitignore",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md,css}\" --ignore-path .gitignore"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.2",
+    "prettier": "^3.4.2"
+  }
+}

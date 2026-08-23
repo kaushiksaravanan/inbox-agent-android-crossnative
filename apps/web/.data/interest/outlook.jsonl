@@ -1,0 +1,10 @@
+{"email":"smoke@test.local","feature":"outlook","source":"smoke-test","ts":"2026-06-24T18:50:39.999Z","ip_hash":"3e48ef9d22e096da","ua":"node"}
+{"email":"smoke@test.local","feature":"outlook","source":"smoke","ts":"2026-06-24T18:50:45.009Z","ip_hash":"eff8e7ca506627fe","ua":"curl/8.19.0"}
+{"email":"smoke@test.local","feature":"outlook","source":"smoke-test","ts":"2026-06-24T19:21:37.028Z","ip_hash":"3e48ef9d22e096da","ua":"node"}
+{"email":"smoke@test.local","feature":"outlook","source":"smoke-test","ts":"2026-06-24T19:59:11.996Z","ip_hash":"3e48ef9d22e096da","ua":"node"}
+{"email":"pixel-test@example.com","feature":"outlook","source":"hero-provider-strip","ts":"2026-06-29T20:45:57.500Z","ip_hash":"eff8e7ca506627fe","ua":"Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36"}
+{"email":"smoke@test.local","feature":"outlook","source":"smoke-test","ts":"2026-06-29T20:51:03.275Z","ip_hash":"3e48ef9d22e096da","ua":"node"}
+{"email":"smoke@test.local","feature":"outlook","source":"smoke-test","ts":"2026-06-29T20:57:22.107Z","ip_hash":"3e48ef9d22e096da","ua":"node"}
+{"email":"pixel-test@example.com","feature":"outlook","source":"hero-provider-strip","ts":"2026-06-29T20:58:20.103Z","ip_hash":"eff8e7ca506627fe","ua":"Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36"}
+{"email":"smoke@test.local","feature":"outlook","source":"smoke-test","ts":"2026-06-29T21:12:23.134Z","ip_hash":"3e48ef9d22e096da","ua":"node"}
+{"email":"smoke@test.local","feature":"outlook","source":"smoke-test","ts":"2026-06-29T21:22:20.024Z","ip_hash":"3e48ef9d22e096da","ua":"node"}

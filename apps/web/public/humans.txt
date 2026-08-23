@@ -1,0 +1,31 @@
+/* TEAM */
+
+  Maker:    Kaushik Saravanan
+  Contact:  hello [at] inbox.agent
+  From:     The internet
+
+/* THANKS */
+
+  Vercel — for next/og making the dynamic OG cards possible without me
+           hand-rolling satori
+  Expo —   for shipping enough native modules that this Android app
+           didn't need a single line of Java for the first 90% of features
+  Supabase — for being the only piece of server infrastructure this
+           product needs after the local-first pivot
+  pngjs —  for letting the pixel-regression test catch brand drift
+  ESLint v8 — for predating ESLint v9, which broke our config in production
+
+/* SITE */
+
+  Last update:    2026-06-24
+  Standards:      HTML5, CSS3, ES2022
+  Components:     Next.js 14, React 18, Tailwind, expo-router
+  Software:       VS Code, Cursor, Claude
+  Hosted on:      undecided as of the last build
+
+/* PRINCIPLES */
+
+  Read your email on your phone, not on our server.
+  Every task explains why it's on your list.
+  One-time price; cancellation just stops alarms, doesn't lock you out.
+  Open source-available, contribution-friendly, commercial-protected.

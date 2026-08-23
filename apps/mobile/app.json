@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Inbox Agent",
+    "slug": "inbox-agent",
+    "scheme": "inbox-agent",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "package": "com.inbox.agent",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#fafaf8"
+      },
+      "permissions": [
+        "SCHEDULE_EXACT_ALARM",
+        "USE_FULL_SCREEN_INTENT",
+        "POST_NOTIFICATIONS",
+        "WAKE_LOCK",
+        "VIBRATE",
+        "RECEIVE_BOOT_COMPLETED"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.inbox.agent",
+      "infoPlist": {
+        "UIBackgroundModes": ["fetch", "remote-notification"]
+      }
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "color": "#c64210",
+          "sounds": ["./assets/alarm.wav"]
+        }
+      ],
+      "expo-router",
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

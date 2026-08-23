@@ -1,0 +1,118 @@
+{
+  "tone": "friendly",
+  "pronoun": "you-only",
+  "headingStyle": "Title Case",
+  "headingLengthClass": "tight",
+  "ctaVerbs": [
+    {
+      "value": "what",
+      "count": 3
+    },
+    {
+      "value": "download",
+      "count": 1
+    },
+    {
+      "value": "yearly",
+      "count": 1
+    },
+    {
+      "value": "monthly",
+      "count": 1
+    },
+    {
+      "value": "join",
+      "count": 1
+    },
+    {
+      "value": "own",
+      "count": 1
+    },
+    {
+      "value": "do",
+      "count": 1
+    },
+    {
+      "value": "can",
+      "count": 1
+    },
+    {
+      "value": "build",
+      "count": 1
+    },
+    {
+      "value": "what's",
+      "count": 1
+    }
+  ],
+  "buttonPatterns": [
+    {
+      "value": "download free",
+      "count": 1
+    },
+    {
+      "value": "yearly\n$49\n/yr\n$120\n60% off",
+      "count": 1
+    },
+    {
+      "value": "monthly\n$5.99\n/mo\n$14.99\n60% off",
+      "count": 1
+    },
+    {
+      "value": "join pro for $49",
+      "count": 1
+    },
+    {
+      "value": "own clonk forever",
+      "count": 1
+    },
+    {
+      "value": "what is clonk?",
+      "count": 1
+    },
+    {
+      "value": "do i need to pay for ai on top of this?",
+      "count": 1
+    },
+    {
+      "value": "what does the autonomous loop actually do?",
+      "count": 1
+    },
+    {
+      "value": "can i use clonk if i'm not a developer?",
+      "count": 1
+    },
+    {
+      "value": "what can i actually build with it?",
+      "count": 1
+    },
+    {
+      "value": "what's the difference between free and pro?",
+      "count": 1
+    },
+    {
+      "value": "how does ios remote control work?",
+      "count": 1
+    },
+    {
+      "value": "what if i'm switching from another ai coding tool?",
+      "count": 1
+    }
+  ],
+  "sampleHeadings": [
+    "Agentic Dev Superapp",
+    "Automate Your / Plans",
+    "Autonomous Dev Loops",
+    "Clonk from Anywhere",
+    "Parallel Work",
+    "Agentic Dev Superapp",
+    "Automate Your / Plans",
+    "Autonomous Dev Loops",
+    "Clonk from Anywhere",
+    "Parallel Work"
+  ],
+  "stats": {
+    "buttons": 13,
+    "headings": 13
+  }
+}

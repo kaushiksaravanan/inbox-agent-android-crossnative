@@ -1,0 +1,334 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Clonk-inspired warm canvas with single saturated orange accent.
+   Soft elevation, pill buttons, geometric sans display. */
+
+:root {
+  --ink: #101010;
+  --ink-soft: #262626;
+  --ink-mid: #555555;
+  --ink-muted: #676767;
+  --ink-faint: #e5e5e5;
+  --paper: #fafaf8;
+  --paper-warm: #ffffff;
+  --rule: #e5e5e5;
+  --hairline: rgba(0, 0, 0, 0.06);
+
+  /* Accent palette. The base accent is tuned for WCAG AA contrast:
+     #c64210 hits 5.0:1 vs white (button fg) and 4.8:1 vs paper (link). */
+  --accent: #c64210;
+  --accent-soft: #ff7a47;
+  --accent-glow: rgba(255, 85, 29, 0.32);
+  --accent-ring: rgba(255, 85, 29, 0.12);
+  --lime: #dff58b;
+  --night: #101010;
+  --night-soft: #1b1b1b;
+  --night-grad: linear-gradient(rgb(44, 44, 44), rgb(20, 20, 20));
+  --canvas-fade: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #ffffff 17%,
+    rgba(255, 255, 255, 0.55) 30%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 88%,
+    #fafaf8 100%
+  );
+
+  /* Elevation */
+  --shadow-card: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 12px 34px rgba(33, 28, 20, 0.12);
+  --shadow-card-sm: 0 2px 6px -2px rgba(0, 0, 0, 0.12);
+  --shadow-cta: 0 6px 22px rgba(255, 85, 29, 0.32);
+  --shadow-cta-hover: 0 10px 30px rgba(255, 85, 29, 0.42),
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+  --shadow-float: 0 24px 70px rgba(0, 0, 0, 0.14);
+
+  /* Radii */
+  --radius-sm: 7px;
+  --radius-md: 11px;
+  --radius-lg: 18px;
+  --radius-xl: 22px;
+  --radius-pill: 9999px;
+}
+
+html,
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans), 'Neue Montreal', -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-feature-settings: 'cv11', 'ss01', 'ss03';
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+/* Type system */
+.display {
+  font-family: var(--font-display), 'Bricolage Grotesque', 'Degular Display',
+    'Inter', system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 0.98;
+  font-size-adjust: 0.52;
+}
+
+.display em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.mono {
+  font-family: var(--font-mono), 'Kode Mono', 'JetBrains Mono', 'Menlo',
+    'Consolas', monospace;
+  font-feature-settings: 'tnum', 'zero';
+}
+
+.eyebrow {
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+/* On dark surfaces, this override wins because it appears after .eyebrow
+   in the cascade. Callers can also pass any text-* utility class for
+   one-off color overrides on cards. */
+.eyebrow-on-night {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+/* Page background gradient fog */
+.canvas-fade {
+  background: var(--canvas-fade);
+}
+
+/* Reveal animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.reveal {
+  animation: fadeUp 0.6s ease-out both;
+}
+
+.reveal-target {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity, transform;
+}
+.reveal-target.is-shown {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal-target {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Mobile drawer */
+.mobile-drawer {
+  transform: translateX(100%);
+  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+.mobile-drawer[data-open="true"] {
+  transform: translateX(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .mobile-drawer {
+    transition: none;
+  }
+}
+
+/* Marquee */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: flex;
+  gap: 64px;
+  width: max-content;
+  animation: marquee 38s linear infinite;
+}
+
+/* Buttons — pill family */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--accent);
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: var(--shadow-cta);
+  transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-primary:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-cta-hover);
+}
+.btn-primary:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--accent-ring), var(--shadow-cta-hover);
+  transform: scale(1.02);
+}
+
+/* Global focus-visible fallback for interactive elements without a custom ring */
+a:focus-visible,
+button:focus-visible,
+[role='button']:focus-visible,
+summary:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: inherit;
+}
+
+.btn-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--night-soft);
+  color: rgba(255, 255, 255, 0.92);
+  padding: 12px 24px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: var(--shadow-card-sm);
+  transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-dark:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-card);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--ink);
+  padding: 12px 24px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  border: 1px solid rgba(16, 16, 16, 0.15);
+  transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-ghost:hover {
+  transform: scale(1.02);
+  background: rgba(16, 16, 16, 0.05);
+}
+
+/* Elevated card surfaces */
+.card-elev {
+  background: var(--paper-warm);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-card);
+}
+.card-rest {
+  background: var(--paper-warm);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-card-sm);
+}
+
+/* Card surfaces */
+.card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card-sm);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card);
+}
+.card-lg {
+  border-radius: var(--radius-lg);
+}
+
+.card-hover {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card);
+}
+
+/* Number ticker style */
+.tick {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum';
+}
+
+/* Accordion */
+details > summary { list-style: none; cursor: pointer; }
+details > summary::-webkit-details-marker { display: none; }
+summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+details[open] > summary .chev {
+  transform: rotate(45deg);
+  color: var(--accent);
+}
+.chev { transition: transform 0.25s ease, color 0.25s ease; }
+
+/* Underline link */
+.link {
+  position: relative;
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  transition: opacity 0.2s ease;
+}
+.link:hover { opacity: 0.7; }
+
+/* Dotted rule */
+.dotted {
+  background-image: linear-gradient(90deg, var(--ink-faint) 50%, transparent 50%);
+  background-size: 8px 1px;
+  background-repeat: repeat-x;
+  background-position: 0 50%;
+}
+
+/* Section variants */
+.section-night {
+  background: var(--night);
+  color: #ffffff;
+}
+.section-night-grad {
+  background: var(--night-grad);
+  color: #ffffff;
+}
+.section-lime {
+  background: var(--lime);
+  color: var(--ink);
+}
+
+/* Hairline divider */
+.hair {
+  border-color: var(--hairline);
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://designlang.app/schemas/gradients.json",
+  "source": "https://www.clonk.ai/",
+  "generated": "2026-06-21T19:40:54.882Z",
+  "count": 3,
+  "gradients": [
+    {
+      "raw": "linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255) 17%, rgba(255, 255, 255, 0.55) 30%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 88%, rgb(250, 250, 248))",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "position": null
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "position": "17%"
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.55)",
+          "position": "30%"
+        },
+        {
+          "color": "rgba(255, 255, 255, 0)",
+          "position": "50%"
+        },
+        {
+          "color": "rgba(255, 255, 255, 0)",
+          "position": "88%"
+        },
+        {
+          "color": "rgb(250, 250, 248)",
+          "position": null
+        }
+      ],
+      "classification": "complex"
+    },
+    {
+      "raw": "linear-gradient(rgb(44, 44, 44), rgb(20, 20, 20))",
+      "type": "linear",
+      "direction": null,
+      "stops": [
+        {
+          "color": "rgb(44, 44, 44)",
+          "position": null
+        },
+        {
+          "color": "rgb(20, 20, 20)",
+          "position": null
+        }
+      ],
+      "classification": "brand"
+    },
+    {
+      "raw": "linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0))",
+      "type": "linear",
+      "direction": "to top",
+      "stops": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "position": null
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.8)",
+          "position": null
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "position": null
+        }
+      ],
+      "classification": "bold"
+    }
+  ]
+}

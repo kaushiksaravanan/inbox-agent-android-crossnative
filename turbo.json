@@ -1,0 +1,62 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": [
+        "src/**",
+        "app/**",
+        "public/**",
+        "package.json",
+        "tsconfig.json",
+        "next.config.*",
+        "tailwind.config.*",
+        "postcss.config.*",
+        "app.config.*",
+        "app.json"
+      ],
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {
+      "inputs": [
+        "src/**",
+        "app/**",
+        ".eslintrc*",
+        "eslint.config.*",
+        "package.json"
+      ],
+      "outputs": []
+    },
+    "typecheck": {
+      "inputs": [
+        "src/**",
+        "app/**",
+        "scripts/**",
+        "package.json",
+        "tsconfig.json",
+        "tsconfig.tsbuildinfo"
+      ],
+      "outputs": []
+    },
+    "test": {
+      "dependsOn": ["typecheck"],
+      "inputs": [
+        "src/**",
+        "app/**",
+        "scripts/**",
+        "package.json",
+        "tsconfig.json",
+        "../../SPEC.md",
+        "../../README.md",
+        "../../CONTRIBUTING.md",
+        "../../scripts/**",
+        "../../supabase/migrations/**"
+      ],
+      "outputs": []
+    }
+  }
+}

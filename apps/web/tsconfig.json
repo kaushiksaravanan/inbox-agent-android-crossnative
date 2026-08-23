@@ -1,0 +1,51 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "es2022"
+    ],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@inbox/shared": [
+        "../../packages/shared/src"
+      ],
+      "@inbox/shared/*": [
+        "../../packages/shared/src/*"
+      ],
+      "@inbox/ui": [
+        "../../packages/ui/src"
+      ],
+      "react": [
+        "./node_modules/@types/react"
+      ],
+      "react/*": [
+        "./node_modules/@types/react/*"
+      ]
+    },
+    "allowJs": true,
+    "noEmit": true,
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

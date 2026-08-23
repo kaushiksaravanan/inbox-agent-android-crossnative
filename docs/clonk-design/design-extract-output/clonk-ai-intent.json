@@ -1,0 +1,262 @@
+{
+  "pageIntent": {
+    "type": "landing",
+    "confidence": 0.29,
+    "path": "/",
+    "title": "clonk agentic dev",
+    "description": "crack vibe coding: agents, skills, commands, to ship faster and cheaper",
+    "signals": [
+      {
+        "kind": "dom",
+        "type": "blog-post",
+        "weight": 0.35,
+        "detail": "byline|min-read"
+      },
+      {
+        "kind": "dom",
+        "type": "legal",
+        "weight": 0.4
+      },
+      {
+        "kind": "url",
+        "type": "landing",
+        "weight": 0.45,
+        "detail": "root-path"
+      }
+    ],
+    "alternates": [
+      {
+        "type": "legal",
+        "score": 0.4
+      },
+      {
+        "type": "blog-post",
+        "score": 0.35
+      }
+    ],
+    "needsSmart": true
+  },
+  "sectionRoles": {
+    "sections": [
+      {
+        "index": 0,
+        "tag": "main",
+        "role": "pricing-table",
+        "subrole": null,
+        "confidence": 0.9,
+        "heading": "Agentic Dev Superapp",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 9427.390625
+        },
+        "buttonCount": 15,
+        "cardCount": 139,
+        "slots": {
+          "heading": "Agentic Dev Superapp",
+          "subheadings": [
+            "Automate Your / Plans",
+            "Autonomous Dev Loops",
+            "Clonk from Anywhere",
+            "Parallel Work"
+          ],
+          "ctaCount": 15,
+          "lede": "Pricing\nBlueprints\n1 Shot\nGallery\nAgentic Dev Superapp"
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 1,
+        "tag": "section",
+        "role": "hero",
+        "subrole": null,
+        "confidence": 0.85,
+        "heading": "Agentic Dev Superapp",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 1402.75
+        },
+        "buttonCount": 3,
+        "cardCount": 27,
+        "slots": {
+          "heading": "Agentic Dev Superapp",
+          "ctaCount": 3,
+          "lede": "Pricing\nBlueprints\n1 Shot\nGallery\nAgentic Dev Superapp"
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 2,
+        "tag": "header",
+        "role": "nav",
+        "subrole": null,
+        "confidence": 0.4,
+        "heading": null,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 184
+        },
+        "buttonCount": 2,
+        "cardCount": 11,
+        "slots": {
+          "ctaCount": 2,
+          "lede": "Pricing\nBlueprints\n1 Shot\nGallery"
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 3,
+        "tag": "nav",
+        "role": "nav",
+        "subrole": null,
+        "confidence": 0.9,
+        "heading": null,
+        "bounds": {
+          "x": 88,
+          "y": 28,
+          "w": 1104,
+          "h": 72
+        },
+        "buttonCount": 2,
+        "cardCount": 9,
+        "slots": {
+          "ctaCount": 2,
+          "lede": "Pricing\nBlueprints\n1 Shot\nGallery"
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 4,
+        "tag": "section",
+        "role": "pricing-table",
+        "subrole": null,
+        "confidence": 0.9,
+        "heading": "Automate Your / Plans",
+        "bounds": {
+          "x": 0,
+          "y": 1402.75,
+          "w": 1280,
+          "h": 7011.640625
+        },
+        "buttonCount": 4,
+        "cardCount": 95,
+        "slots": {
+          "heading": "Automate Your / Plans",
+          "subheadings": [
+            "Autonomous Dev Loops",
+            "Clonk from Anywhere",
+            "Parallel Work",
+            "Clean UI"
+          ],
+          "ctaCount": 4
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 5,
+        "tag": "section",
+        "role": "faq",
+        "subrole": null,
+        "confidence": 0.85,
+        "heading": "FAQ",
+        "bounds": {
+          "x": 0,
+          "y": 8414.390625,
+          "w": 1280,
+          "h": 1013
+        },
+        "buttonCount": 8,
+        "cardCount": 16,
+        "slots": {
+          "heading": "FAQ",
+          "ctaCount": 8,
+          "lede": "FAQ\nWhat is Clonk?\nDo I need to pay for AI on top of this?\nWhat does the autonomous loop actually do?\nCan I use Clonk if I'm not a developer?\nWhat can I actually build with it?\nWhat's the difference between Free and Pro?\nHow does iOS remote control work?\nWhat if I'm switching from another AI coding tool?"
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 6,
+        "tag": "footer",
+        "role": "footer",
+        "subrole": null,
+        "confidence": 0.95,
+        "heading": "Ship apps without burning credits.",
+        "bounds": {
+          "x": 0,
+          "y": 9427.390625,
+          "w": 1280,
+          "h": 544.25
+        },
+        "buttonCount": 0,
+        "cardCount": 16,
+        "slots": {
+          "heading": "Ship apps without burning credits.",
+          "lede": "Clonk\nShip apps without burning credits."
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 7,
+        "tag": "nav",
+        "role": "nav",
+        "subrole": null,
+        "confidence": 0.9,
+        "heading": null,
+        "bounds": {
+          "x": 678,
+          "y": 9484.390625,
+          "w": 520,
+          "h": 211.5
+        },
+        "buttonCount": 0,
+        "cardCount": 9,
+        "slots": {
+          "lede": "product\nGenerate\nBlueprints\nSkills\nGallery\nUpgrade\nlegal\nPrivacy Policy\nEULA\nmore\nCreatorHunter\nClockout"
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 8,
+        "tag": "section",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": null,
+        "bounds": {
+          "x": 0,
+          "y": 9971.640625,
+          "w": 1280,
+          "h": 0
+        },
+        "buttonCount": 0,
+        "cardCount": 0,
+        "slots": {},
+        "needsSmart": true
+      }
+    ],
+    "counts": {
+      "pricing-table": 2,
+      "hero": 1,
+      "nav": 3,
+      "faq": 1,
+      "footer": 1,
+      "content": 1
+    },
+    "readingOrder": [
+      "pricing-table",
+      "hero",
+      "nav",
+      "nav",
+      "pricing-table",
+      "faq",
+      "footer",
+      "nav",
+      "content"
+    ]
+  }
+}

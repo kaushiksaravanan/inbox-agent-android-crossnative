@@ -1,0 +1,458 @@
+{
+  "$metadata": {
+    "generator": "designlang",
+    "version": "7.0.0",
+    "spec": "https://design-tokens.github.io/community-group/format/",
+    "source": "https://www.clonk.ai/",
+    "generatedAt": "2026-06-21T19:19:33.418Z"
+  },
+  "primitive": {
+    "color": {
+      "brand": {
+        "primary": {
+          "$value": "#ff551d",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "#dff58b",
+          "$type": "color"
+        }
+      },
+      "neutral": {
+        "n100": {
+          "$value": "#262626",
+          "$type": "color"
+        },
+        "n200": {
+          "$value": "#ffffff",
+          "$type": "color"
+        },
+        "n300": {
+          "$value": "#000000",
+          "$type": "color"
+        },
+        "n400": {
+          "$value": "#555555",
+          "$type": "color"
+        },
+        "n500": {
+          "$value": "#f1f1f1",
+          "$type": "color"
+        },
+        "n600": {
+          "$value": "#101010",
+          "$type": "color"
+        },
+        "n700": {
+          "$value": "#1b1b1b",
+          "$type": "color"
+        },
+        "n800": {
+          "$value": "#676767",
+          "$type": "color"
+        },
+        "n900": {
+          "$value": "#e5e5e5",
+          "$type": "color"
+        },
+        "n1000": {
+          "$value": "#757575",
+          "$type": "color"
+        }
+      },
+      "background": {
+        "bg0": {
+          "$value": "#000000",
+          "$type": "color"
+        },
+        "bg1": {
+          "$value": "#fafaf8",
+          "$type": "color"
+        },
+        "bg2": {
+          "$value": "#ffffff",
+          "$type": "color"
+        },
+        "bg3": {
+          "$value": "#f1f1f1",
+          "$type": "color"
+        },
+        "bg4": {
+          "$value": "#dff58b",
+          "$type": "color"
+        },
+        "bg5": {
+          "$value": "#f5f5f5",
+          "$type": "color"
+        },
+        "bg6": {
+          "$value": "#101010",
+          "$type": "color"
+        },
+        "bg7": {
+          "$value": "#f4f4f4",
+          "$type": "color"
+        },
+        "bg8": {
+          "$value": "#ff551d",
+          "$type": "color"
+        },
+        "bg9": {
+          "$value": "#f6f6f3",
+          "$type": "color"
+        }
+      },
+      "text": {
+        "text0": {
+          "$value": "#ffffff",
+          "$type": "color"
+        },
+        "text1": {
+          "$value": "#fafafa",
+          "$type": "color"
+        },
+        "text2": {
+          "$value": "#000000",
+          "$type": "color"
+        },
+        "text3": {
+          "$value": "#676767",
+          "$type": "color"
+        },
+        "text4": {
+          "$value": "#ff551d",
+          "$type": "color"
+        },
+        "text5": {
+          "$value": "#242424",
+          "$type": "color"
+        },
+        "text6": {
+          "$value": "#555555",
+          "$type": "color"
+        },
+        "text7": {
+          "$value": "#252525",
+          "$type": "color"
+        },
+        "text8": {
+          "$value": "#757575",
+          "$type": "color"
+        },
+        "text9": {
+          "$value": "#fcfcfc",
+          "$type": "color"
+        }
+      }
+    },
+    "spacing": {
+      "s0": {
+        "$value": "2px",
+        "$type": "dimension"
+      },
+      "s1": {
+        "$value": "48px",
+        "$type": "dimension"
+      },
+      "s2": {
+        "$value": "56px",
+        "$type": "dimension"
+      },
+      "s3": {
+        "$value": "64px",
+        "$type": "dimension"
+      },
+      "s4": {
+        "$value": "80px",
+        "$type": "dimension"
+      },
+      "s5": {
+        "$value": "96px",
+        "$type": "dimension"
+      },
+      "s6": {
+        "$value": "112px",
+        "$type": "dimension"
+      },
+      "s7": {
+        "$value": "127px",
+        "$type": "dimension"
+      },
+      "s8": {
+        "$value": "160px",
+        "$type": "dimension"
+      },
+      "s9": {
+        "$value": "173px",
+        "$type": "dimension"
+      },
+      "s10": {
+        "$value": "178px",
+        "$type": "dimension"
+      },
+      "s11": {
+        "$value": "200px",
+        "$type": "dimension"
+      },
+      "s12": {
+        "$value": "208px",
+        "$type": "dimension"
+      },
+      "s13": {
+        "$value": "232px",
+        "$type": "dimension"
+      },
+      "s14": {
+        "$value": "260px",
+        "$type": "dimension"
+      },
+      "s15": {
+        "$value": "279px",
+        "$type": "dimension"
+      },
+      "s16": {
+        "$value": "332px",
+        "$type": "dimension"
+      }
+    },
+    "radius": {
+      "r0": {
+        "$value": "7px",
+        "$type": "dimension"
+      },
+      "r1": {
+        "$value": "11px",
+        "$type": "dimension"
+      },
+      "r2": {
+        "$value": "14px",
+        "$type": "dimension"
+      },
+      "r3": {
+        "$value": "18px",
+        "$type": "dimension"
+      },
+      "r4": {
+        "$value": "22px",
+        "$type": "dimension"
+      },
+      "r5": {
+        "$value": "26px",
+        "$type": "dimension"
+      },
+      "r6": {
+        "$value": "34px",
+        "$type": "dimension"
+      },
+      "r7": {
+        "$value": "38px",
+        "$type": "dimension"
+      },
+      "r8": {
+        "$value": "45px",
+        "$type": "dimension"
+      },
+      "r9": {
+        "$value": "48px",
+        "$type": "dimension"
+      },
+      "r10": {
+        "$value": "9999px",
+        "$type": "dimension"
+      }
+    },
+    "shadow": {
+      "sh0": {
+        "$value": "rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(33, 28, 20, 0.12) 0px 12px 34px 0px",
+        "$type": "shadow"
+      },
+      "sh1": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.15) 0px 6px 16px 0px",
+        "$type": "shadow"
+      },
+      "sh2": {
+        "$value": "rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.07) 0px 0px 0px 1px, rgba(0, 0, 0, 0.08) 0px 4px 24px 0px",
+        "$type": "shadow"
+      },
+      "sh3": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 2px 6px -2px",
+        "$type": "shadow"
+      },
+      "sh4": {
+        "$value": "rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "$type": "shadow"
+      },
+      "sh5": {
+        "$value": "rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.28) 0px 18px 44px 0px",
+        "$type": "shadow"
+      },
+      "sh6": {
+        "$value": "rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(35, 45, 60, 0.18) 0px 18px 44px 0px",
+        "$type": "shadow"
+      },
+      "sh7": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.16) 0px 8px 18px 0px",
+        "$type": "shadow"
+      },
+      "sh8": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.9) 0px 1px 0px 0px inset",
+        "$type": "shadow"
+      },
+      "sh9": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 8px 24px 0px",
+        "$type": "shadow"
+      },
+      "sh10": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 85, 29, 0.12) 0px 0px 0px 3px",
+        "$type": "shadow"
+      },
+      "sh11": {
+        "$value": "rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(176, 176, 176, 0.25) 0px 4px 10px 0px",
+        "$type": "shadow"
+      },
+      "sh12": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(176, 176, 176, 0.25) 0px 4px 10px 0px",
+        "$type": "shadow"
+      },
+      "sh13": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 4px 20px 0px",
+        "$type": "shadow"
+      },
+      "sh14": {
+        "$value": "rgb(255, 255, 255) 0px 0px 0px 0px, rgb(255, 255, 255) 0px 0px 0px 3px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "$type": "shadow"
+      },
+      "sh15": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(98, 137, 43, 0.16) 0px 22px 55px 0px",
+        "$type": "shadow"
+      },
+      "sh16": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.16) 0px 0px 0px 1px inset",
+        "$type": "shadow"
+      },
+      "sh17": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+        "$type": "shadow"
+      },
+      "sh18": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.04) 0px 18px 45px 0px",
+        "$type": "shadow"
+      },
+      "sh19": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.043) 0px 24px 70px 0px",
+        "$type": "shadow"
+      },
+      "sh20": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.14) 0px 24px 70px 0px",
+        "$type": "shadow"
+      },
+      "sh21": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 85, 29, 0.38) 0px 0px 22px 0px",
+        "$type": "shadow"
+      },
+      "sh22": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 16px 45px 0px",
+        "$type": "shadow"
+      },
+      "sh23": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 10px 25px 0px",
+        "$type": "shadow"
+      },
+      "sh24": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.14) 0px 14px 35px 0px",
+        "$type": "shadow"
+      },
+      "sh25": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.18) 0px 24px 70px 0px",
+        "$type": "shadow"
+      },
+      "sh26": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.16) 0px 16px 35px 0px",
+        "$type": "shadow"
+      },
+      "sh27": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 18px 45px 0px",
+        "$type": "shadow"
+      },
+      "sh28": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 85, 29, 0.32) 0px 16px 40px 0px",
+        "$type": "shadow"
+      },
+      "sh29": {
+        "$value": "rgb(255, 255, 255) 0px 0px 0px 0px, rgb(16, 16, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "$type": "shadow"
+      },
+      "sh30": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.07) 0px 12px 30px 0px",
+        "$type": "shadow"
+      },
+      "sh31": {
+        "$value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.043) 0px 10px 26px 0px",
+        "$type": "shadow"
+      }
+    },
+    "fontFamily": {
+      "f0": {
+        "$value": "__neueMontreal_8db69f",
+        "$type": "fontFamily"
+      },
+      "f1": {
+        "$value": "__stackSansText_3cee34",
+        "$type": "fontFamily"
+      },
+      "f2": {
+        "$value": "__degularDisplay_1e8a8c",
+        "$type": "fontFamily"
+      }
+    }
+  },
+  "semantic": {
+    "color": {
+      "action": {
+        "primary": {
+          "$value": "{primitive.color.brand.primary}",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "{primitive.color.brand.secondary}",
+          "$type": "color"
+        }
+      },
+      "surface": {
+        "default": {
+          "$value": "{primitive.color.background.bg0}",
+          "$type": "color"
+        }
+      },
+      "text": {
+        "body": {
+          "$value": "{primitive.color.text.text0}",
+          "$type": "color"
+        }
+      }
+    },
+    "typography": {
+      "body": {
+        "$value": {
+          "fontFamily": "__neueMontreal_8db69f",
+          "fontSize": "80px",
+          "fontWeight": "700",
+          "lineHeight": "80px"
+        },
+        "$type": "typography"
+      }
+    },
+    "radius": {
+      "control": {
+        "$value": "{primitive.radius.r0}",
+        "$type": "dimension"
+      }
+    },
+    "shadow": {
+      "elevated": {
+        "$value": "{primitive.shadow.sh0}",
+        "$type": "shadow"
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+Inbox Agent — Source-Available License
+========================================
+
+Copyright (c) 2026 Kaushik Saravanan. All rights reserved.
+
+This source code is made available for transparency, security review,
+and personal study. It is NOT open-source software. The terms below
+are deliberately restrictive — this is a commercial product.
+
+PERMITTED
+---------
+
+You MAY:
+
+  - Read and audit this source code.
+  - Submit bug reports, security disclosures, and pull requests.
+  - Fork the repository for the purpose of submitting contributions.
+  - Use this code for educational purposes (reading, learning, teaching),
+    including in classroom or training contexts that do not redistribute
+    the code or run it as a service.
+
+NOT PERMITTED
+-------------
+
+You MAY NOT, without express prior written permission from the copyright
+holder:
+
+  - Run this code, or any derivative work based on this code, in
+    production for yourself or any other person or organization.
+  - Distribute, sublicense, sell, or otherwise transfer this code or
+    any derivative work, including paid hosting and "as a service"
+    offerings.
+  - Use the Inbox Agent name, logo, or brand marks to identify any
+    product or service that you operate.
+  - Use this code as training data for a machine-learning model whose
+    outputs are sold or hosted as a service.
+
+CONTRIBUTIONS
+-------------
+
+By submitting a contribution (pull request, patch, suggestion), you
+grant the copyright holder a perpetual, irrevocable, worldwide,
+royalty-free license to use, modify, sublicense, and distribute your
+contribution as part of Inbox Agent under the terms of this license
+or any subsequent license the copyright holder chooses.
+
+NO WARRANTY
+-----------
+
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THIS
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THIS SOFTWARE.
+
+FUTURE RELICENSING
+------------------
+
+The copyright holder reserves the right to release future versions of
+Inbox Agent under different terms, including more permissive licenses
+(e.g., AGPL, MIT) or more restrictive ones. Prior releases under this
+license remain available under this license.
+
+CONTACT
+-------
+
+For licensing inquiries (including commercial / self-host licensing):
+  hello@inbox.agent
+
+For security disclosures:
+  security@inbox.agent

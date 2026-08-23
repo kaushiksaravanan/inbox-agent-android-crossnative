@@ -1,0 +1,47 @@
+{
+  "name": "@inbox/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx scripts/test-l3.ts && tsx ../mobile/scripts/test-l3-mobile.ts && tsx ../mobile/scripts/test-background-poll.ts && tsx ../mobile/scripts/test-local-db-shape.ts && tsx ../mobile/scripts/test-mobile-shape.ts && tsx ../../packages/shared/scripts/test-barrel.ts && tsx scripts/test-rate-limit.ts && tsx ../../scripts/check-spec-consistency.ts && tsx ../../scripts/test-check-spec-consistency.ts && tsx ../../scripts/check-readme-consistency.ts && tsx ../../scripts/check-contributing-rules.ts && tsx ../../scripts/check-changelog-consistency.ts && tsx scripts/test-og-card.ts && tsx scripts/test-health-contract.ts && tsx scripts/test-welcome-interest.ts",
+    "test:watch": "tsx scripts/test-watch.ts",
+    "test:integration": "tsx scripts/run-integration-tests.ts"
+  },
+  "dependencies": {
+    "@inbox/shared": "workspace:*",
+    "@inbox/ui": "workspace:*",
+    "@supabase/ssr": "^0.5.2",
+    "@supabase/supabase-js": "^2.47.10",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "framer-motion": "^11.15.0",
+    "lucide-react": "^0.469.0",
+    "motion": "^11.15.0",
+    "next": "14.2.21",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "sonner": "^1.7.1",
+    "tailwind-merge": "^2.5.5",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/pngjs": "^6.0.5",
+    "@types/react": "18.3.12",
+    "autoprefixer": "^10.4.20",
+    "critters": "^0.0.25",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.21",
+    "pngjs": "^7.0.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.22.4",
+    "typescript": "^5.7.2"
+  },
+  "browserslist": ">0.5%, last 2 versions, Firefox ESR, not dead, not op_mini all"
+}

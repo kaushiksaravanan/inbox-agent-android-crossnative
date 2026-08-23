@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+# pre-push hook — runs lint + typecheck + tests + integration before allowing a push.
+#
+# To activate after `git init`:
+#   git config core.hooksPath .githooks
+#
+# To bypass once (e.g. work-in-progress branch):
+#   git push --no-verify
+#
+# To skip the slower integration step locally (still keeps lint/typecheck/test):
+#   SKIP_INTEGRATION=1 git push
+#
+# To also run pnpm build (catches Next.js build errors TSC misses):
+#   FULL=1 git push
+
+set -e
+
+echo "[pre-push] Running lint..."
+pnpm lint
+
+echo "[pre-push] Running typecheck..."
+pnpm typecheck
+
+echo "[pre-push] Running test suite..."
+pnpm test
+
+if [ "${SKIP_INTEGRATION:-0}" = "1" ]; then
+  echo "[pre-push] SKIP integration tests (SKIP_INTEGRATION=1)."
+else
+  echo "[pre-push] Running integration tests (boots a server, ~30s)..."
+  pnpm --filter @inbox/web test:integration
+fi
+
+if [ "${FULL:-0}" = "1" ]; then
+  echo "[pre-push] Running production build (FULL=1)..."
+  pnpm build
+fi
+
+echo "[pre-push] OK — push allowed."

@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name">Inbox Agent</string>
+  <string name="widget_description">Today\'s pending tasks</string>
+</resources>

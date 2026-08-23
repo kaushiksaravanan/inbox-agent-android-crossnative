@@ -1,0 +1,22 @@
+story_id,feature_id,title,persona,priority,status,last_tested,test_result
+US-001,F01,Sign up with email and password,Maya / new user,P0,shipped,2026-06-22,pass
+US-002,F01,Reject duplicate email on sign up,Devon / returning user,P1,shipped,2026-06-22,pass
+US-003,F02,Sign in with email and password,Tom / returning user,P0,shipped,2026-06-22,pass
+US-004,F02,Email-not-confirmed dead end on sign in,Maya / new user who forgot to verify,P1,shipped,2026-06-22,pass
+US-005,F03,Connect first Gmail account via OAuth,Priya / new user mid-onboarding,P0,shipped,2026-06-22,pass
+US-006,F04,Background cron syncs Gmail every 15 minutes,Maya / freelance designer with 2 Gmail accounts,P0,shipped,2026-06-22,pass
+US-007,F04,Cron isolates one failing account so the rest still sync,Devon / power user with Gmail + Outlook + a dead Gmail he forgot to remove,P0,shipped,2026-06-22,pass
+US-008,F05,Manual `Sync now` button forces an immediate pull,Priya / new user mid-onboarding,P1,shipped,2026-06-22,pass
+US-009,F06,Add my own OpenAI API key for BYOK extraction,Devon / power user concerned with cost + privacy,P1,shipped,2026-06-22,pass
+US-010,F07,Browse open tasks ordered by alarm,Maya / freelance designer with 2 Gmail accounts,P0,shipped,2026-06-22,pass
+US-011,F07,See an empty-state when filters return nothing,Tom / returning user with no new mail today,P1,shipped,2026-06-22,pass
+US-012,F08,Filter tasks by category chips,Priya / new user evaluating the product,P1,shipped,2026-06-22,pass
+US-013,F09,Phone rings on alarm via native Android app,Maya / freelance designer,P0,shipped,2026-06-22,skip
+US-014,F10,Pair Android app with web account using 6-digit code,Devon / power user who just installed the APK,P0,shipped,2026-06-22,pass
+US-015,F11,Native Android app shows today's tasks on launch,Maya / mobile-first user,P0,shipped,2026-06-22,skip
+US-016,F12,Land on hero and grok the value prop in 4 seconds,Maya / new user,P0,shipped,2026-06-22,pass
+US-017,F13,Click `Get started free` from hero,Maya / new user,P0,shipped,2026-06-22,pass
+US-018,F14,Download the Android APK directly from the landing page,Devon / new user,P1,shipped,2026-06-22,pass
+US-019,F15,Landing page JSON-LD signals to search engines,Search-engine crawler / SEO baseline,P1,shipped,2026-06-22,pass
+US-020,F16,Manage connected accounts from /accounts,Devon / power user with multiple mailboxes,P1,shipped,2026-06-22,pass
+US-021,F17,Sticky scroll reveal animates as user scrolls landing page,Maya / scroll-curious visitor,P2,shipped,2026-06-22,skip

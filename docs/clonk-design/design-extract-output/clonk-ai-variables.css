@@ -1,0 +1,238 @@
+:root {
+  /* Colors — Primary */
+  --color-primary: #ff551d;
+  --color-secondary: #dff58b;
+  --color-accent: #ff7a47;
+
+  /* Colors — Neutrals */
+  --color-neutral-50: #262626;
+  --color-neutral-100: #ffffff;
+  --color-neutral-200: #000000;
+  --color-neutral-300: #555555;
+  --color-neutral-400: #f1f1f1;
+  --color-neutral-500: #101010;
+  --color-neutral-600: #1b1b1b;
+  --color-neutral-700: #676767;
+  --color-neutral-800: #e5e5e5;
+  --color-neutral-900: #757575;
+
+  /* Colors — Backgrounds */
+  --color-bg: #000000;
+  --color-bg-1: #fafaf8;
+  --color-bg-2: #ffffff;
+  --color-bg-3: #f1f1f1;
+  --color-bg-4: #dff58b;
+  --color-bg-5: #f5f5f5;
+  --color-bg-6: #101010;
+  --color-bg-7: #f4f4f4;
+  --color-bg-8: #ff551d;
+  --color-bg-9: #f6f6f3;
+
+  /* Colors — Text */
+  --color-text: #ffffff;
+  --color-text-1: #fafafa;
+  --color-text-2: #000000;
+  --color-text-3: #676767;
+  --color-text-4: #ff551d;
+
+  /* Typography — Families */
+  --font-body: '__neueMontreal_8db69f', sans-serif;
+  --font-heading: '__stackSansText_3cee34', sans-serif;
+  --font-font-2: '__degularDisplay_1e8a8c', sans-serif;
+
+  /* Typography — Scale */
+  --font-size-80: 80px;
+  --font-size-68: 68px;
+  --font-size-64: 64px;
+  --font-size-62: 62px;
+  --font-size-60: 60px;
+  --font-size-58: 58px;
+  --font-size-56: 56px;
+  --font-size-54: 54px;
+  --font-size-44: 44px;
+  --font-size-42: 42px;
+  --font-size-38: 38px;
+  --font-size-34: 34px;
+
+  /* Spacing */
+  --spacing-2: 2px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-112: 112px;
+  --spacing-127: 127px;
+  --spacing-160: 160px;
+  --spacing-173: 173px;
+  --spacing-178: 178px;
+  --spacing-200: 200px;
+  --spacing-208: 208px;
+  --spacing-232: 232px;
+  --spacing-260: 260px;
+  --spacing-279: 279px;
+  --spacing-332: 332px;
+
+  /* Border Radius */
+  --radius-md: 7px;
+  --radius-lg: 11px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-xl: 22px;
+  --radius-full: 26px;
+  --radius-full: 34px;
+  --radius-full: 38px;
+  --radius-full: 45px;
+  --radius-full: 48px;
+  --radius-full: 9999px;
+
+  /* Box Shadows */
+  --shadow-sm: rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(33, 28, 20, 0.12) 0px 12px 34px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.15) 0px 6px 16px 0px;
+  --shadow-sm: rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.07) 0px 0px 0px 1px, rgba(0, 0, 0, 0.08) 0px 4px 24px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 2px 6px -2px;
+  --shadow-sm: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  --shadow-sm: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.28) 0px 18px 44px 0px;
+  --shadow-sm: rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(35, 45, 60, 0.18) 0px 18px 44px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.16) 0px 8px 18px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.9) 0px 1px 0px 0px inset;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 8px 24px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 85, 29, 0.12) 0px 0px 0px 3px;
+  --shadow-sm: rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(176, 176, 176, 0.25) 0px 4px 10px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(176, 176, 176, 0.25) 0px 4px 10px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 4px 20px 0px;
+  --shadow-sm: rgb(255, 255, 255) 0px 0px 0px 0px, rgb(255, 255, 255) 0px 0px 0px 3px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(98, 137, 43, 0.16) 0px 22px 55px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.16) 0px 0px 0px 1px inset;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.04) 0px 18px 45px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.043) 0px 24px 70px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.14) 0px 24px 70px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 85, 29, 0.38) 0px 0px 22px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 16px 45px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 10px 25px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.14) 0px 14px 35px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.18) 0px 24px 70px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.16) 0px 16px 35px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 18px 45px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 85, 29, 0.32) 0px 16px 40px 0px;
+  --shadow-sm: rgb(255, 255, 255) 0px 0px 0px 0px, rgb(16, 16, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.07) 0px 12px 30px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.043) 0px 10px 26px 0px;
+
+  /* Original Site Variables */
+  /* — colors — */
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --ring: 222.2 84% 4.9%;
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --tw-ring-inset: ;
+  --sidebar-accent-foreground: 240 4.8% 95.9%;
+  --tw-border-spacing-x: 0;
+  --tw-ring-color: rgba(59,130,246,.5);
+  --tw-ring-offset-color: #fff;
+  --chart-5: 340 75% 55%;
+  --sidebar-border: 240 3.7% 15.9%;
+  --sidebar-foreground: 240 4.8% 95.9%;
+  --sidebar-accent: 240 3.7% 15.9%;
+  --tw-ring-offset-width: 0px;
+  --chart-3: 30 80% 55%;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-border-spacing-y: 0;
+  --chart-4: 280 65% 60%;
+  --chart-2: 160 60% 45%;
+  --sidebar-primary: 224.3 76.3% 48%;
+  --sidebar-ring: 217.2 91.2% 59.8%;
+  --chart-1: 189 94% 43%;
+  /* — spacing — */
+  --tw-numeric-spacing: ;
+  --tw-contain-size: ;
+  /* — typography — */
+  --font-matemasie: "__matemasie_2729ec","__matemasie_Fallback_2729ec";
+  --font-cherry-bomb: "__cherryBombOne_d0ce59","__cherryBombOne_Fallback_d0ce59";
+  --font-inconsolata: "__Inconsolata_c86147","__Inconsolata_Fallback_c86147";
+  --font-boldonse: "__boldonse_dbafd1","__boldonse_Fallback_dbafd1";
+  --font-anton-sc: "__Anton_ec6dc7","__Anton_Fallback_ec6dc7";
+  --font-inter: "__Inter_f367f3","__Inter_Fallback_f367f3";
+  --font-instrument-sans: "__Instrument_Sans_3d9088","__Instrument_Sans_Fallback_3d9088";
+  --font-stack-sans: "__stackSansText_3cee34","__stackSansText_Fallback_3cee34";
+  --font-kode-mono: "__Kode_Mono_886240";
+  --font-modak: "__Modak_0fbd6a","__Modak_Fallback_0fbd6a";
+  --font-departure-mono: "__departureMono_1ea498","__departureMono_Fallback_1ea498";
+  --font-degular-display: "__degularDisplay_1e8a8c","__degularDisplay_Fallback_1e8a8c";
+  --font-neue-montreal: "__neueMontreal_8db69f","__neueMontreal_Fallback_8db69f";
+  /* — shadows — */
+  --tw-drop-shadow: ;
+  --tw-shadow: 0 0 #0000;
+  /* — radii — */
+  --radius: 0.75rem;
+  /* — other — */
+  --background: 0 0% 100%;
+  --input: 214.3 31.8% 91.4%;
+  --brand-yellow: 43 100% 70%;
+  --brand-pink: 346 84% 61%;
+  --brand-teal: 158 94% 42%;
+  --brand-navy: 0 0% 15%;
+  --brand-light: 0 0% 98%;
+  --sidebar-background: 240 5.9% 10%;
+  --tw-backdrop-sepia: ;
+  --tw-sepia: ;
+  --tw-ordinal: ;
+  --tw-backdrop-saturate: ;
+  --tw-contain-style: ;
+  --tw-backdrop-invert: ;
+  --tw-brightness: ;
+  --tw-backdrop-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-scale-y: 1;
+  --tw-pan-y: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-brightness: ;
+  --tw-pan-x: ;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-contrast: ;
+  --tw-skew-x: 0;
+  --tw-backdrop-blur: ;
+  --tw-translate-x: 0;
+  --tw-gradient-via-position: ;
+  --tw-saturate: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-grayscale: ;
+  --tw-scale-x: 1;
+  --tw-backdrop-hue-rotate: ;
+  --tw-gradient-to-position: ;
+  --tw-numeric-fraction: ;
+  --tw-skew-y: 0;
+  --tw-slashed-zero: ;
+  --tw-blur: ;
+  --tw-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-gradient-from-position: ;
+  --tw-numeric-figure: ;
+  --tw-pinch-zoom: ;
+  --tw-contain-paint: ;
+  --tw-contain-layout: ;
+  /* — semantic — */
+  success: [object Object];
+  warning: [object Object];
+  error: [object Object];
+  info: [object Object];
+
+}
